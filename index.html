@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AB Talent Sync — Sync Your Next Hire</title>
+  <meta name="description" content="AB Talent Sync connects ambitious professionals with forward-thinking companies — faster, smarter, better. Permanent & contract staffing, executive search and candidate support." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;350;400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%2300d4ff' stroke-width='2'/%3E%3Cpath d='M10 20l6-12 6 12' stroke='%2300ff88' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="AB Talent Sync home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="url(#g1)" stroke-width="1.5"/>
+            <circle cx="13" cy="16" r="3" fill="#00d4ff"/>
+            <circle cx="27" cy="16" r="3" fill="#00ff88"/>
+            <circle cx="20" cy="27" r="3" fill="#e8e8f0"/>
+            <path d="M13 16L27 16M13 16L20 27M27 16L20 27" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#00ff88"/></linearGradient></defs>
+          </svg>
+        </span>
+        AB <b>Talent</b> Sync
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="job-seekers.html">For Job Seekers</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="contact.html" data-magnetic>Hire Talent <span class="arrow">→</span></a>
+
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- mobile overlay -->
+  <nav class="nav__overlay" id="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="job-seekers.html">For Job Seekers</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="contact.html">Hire Talent <span class="arrow">→</span></a>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <div class="hero__grid">
+          <div>
+            <span class="eyebrow reveal">Recruitment · Reimagined</span>
+            <h1 class="h-display reveal" data-delay="1">
+              <span class="hero__line">Sync Your</span>
+              <span class="hero__cycler" aria-label="Next Hire, Dream Role, Best Team, Future">
+                <span class="word">Next Hire</span>
+                <span class="word">Dream Role</span>
+                <span class="word">Best Team</span>
+                <span class="word">Future</span>
+              </span>
+            </h1>
+            <p class="hero__sub reveal" data-delay="2">
+              AB Talent Sync connects ambitious professionals with forward-thinking
+              companies — faster, smarter, better.
+            </p>
+            <div class="hero__cta reveal" data-delay="3">
+              <a class="btn btn--primary btn--lg" href="contact.html" data-magnetic>Find Talent <span class="arrow">→</span></a>
+              <a class="btn btn--ghost btn--lg" href="job-seekers.html">Find Jobs <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <aside class="hero__aside reveal" data-delay="4">
+            <div class="stat-mini"><b>500+</b><span>Successful placements</span></div>
+            <div class="stat-mini"><b>98%</b><span>Client satisfaction</span></div>
+            <div class="stat-mini"><b>8+ yrs</b><span>Industry experience</span></div>
+          </aside>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#stats" aria-label="Scroll down">
+        <span>Scroll</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section section--tight stats" id="stats">
+      <div class="wrap">
+        <div class="stats__grid reveal">
+          <div class="stat">
+            <div class="stat__num" data-count="500" data-suffix="+">0</div>
+            <div class="stat__label">Placements Delivered</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="98" data-suffix="%">0</div>
+            <div class="stat__label">Client Satisfaction</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="50" data-suffix="+">0</div>
+            <div class="stat__label">Industry Partners</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="8" data-suffix="+">0</div>
+            <div class="stat__label">Years of Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow reveal">Our Mission</span>
+          <p class="mission__statement reveal" data-delay="1">
+            We don't just fill roles. We build <span class="text-grad">careers and teams</span> that last.
+          </p>
+          <p class="mission__body reveal" data-delay="2">
+            Behind every placement is a person and a purpose. We pair deep industry
+            knowledge with a human-first process — understanding ambition on one side,
+            culture on the other, and syncing the two with precision. The result isn't
+            just a hire. It's momentum.
+          </p>
+        </div>
+        <div class="reveal" data-delay="2">
+          <div class="icon-grid" aria-hidden="true">
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg></div>
+            <div class="icon-grid__cell icon-grid__cell--accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 9l-5 4.4L17.5 21 12 17l-5.5 4L8 13.4 3 9l6.6-.4z"/></svg></div>
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg></div>
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div class="icon-grid__cell icon-grid__cell--accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <div class="icon-grid__cell icon-grid__cell--accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+            <div class="icon-grid__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V7l9-4 9 4v14M9 21v-6h6v6"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFFERENTIATORS ============ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why AB Talent Sync</span>
+          <h2 class="h-section">Built different. <span class="text-grad">On purpose.</span></h2>
+          <p>Four commitments that turn recruitment from a transaction into a partnership.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-delay="1">
+            <span class="card__num">01</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+            <h3>Speed of Placement</h3>
+            <p>A pre-vetted talent network and a streamlined process get the right people in front of you in days, not months.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <span class="card__num">02</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <h3>Industry Depth</h3>
+            <p>Specialist recruiters who speak your language across IT, engineering, finance, healthcare and beyond.</p>
+          </article>
+          <article class="card reveal" data-delay="3">
+            <span class="card__num">03</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M19 14c1.5-1.6 3-3.5 3-6a4 4 0 00-7-2.6A4 4 0 008 5a4 4 0 00-6 4c0 2.5 1.5 4.4 3 6l7 7z"/></svg></div>
+            <h3>Candidate Care</h3>
+            <p>We coach, prepare and champion every candidate — because great careers build great companies.</p>
+          </article>
+          <article class="card reveal" data-delay="4">
+            <span class="card__num">04</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></svg></div>
+            <h3>Employer Partnership</h3>
+            <p>Workforce planning, market insight and a single accountable point of contact — long after the offer is signed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DUAL CTA SPLIT ============ -->
+    <section class="dual reveal">
+      <div class="dual__half dual__half--employer">
+        <span class="dual__tag">For Employers</span>
+        <h3>Growing your team?</h3>
+        <p>Tell us who you need. We'll sync you with talent that fits the role and the culture.</p>
+        <a class="btn btn--primary" href="contact.html" data-magnetic>Post a Role <span class="arrow">→</span></a>
+      </div>
+      <div class="dual__half dual__half--candidate">
+        <span class="dual__tag">For Candidates</span>
+        <h3>Ready for your next move?</h3>
+        <p>Step into roles that match your ambition — with a team in your corner the whole way.</p>
+        <a class="btn btn--green" href="job-seekers.html" data-magnetic>Browse Opportunities <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-banner reveal">
+          <span class="eyebrow" style="justify-content:center;">Let's Sync</span>
+          <h2>Your next great hire is one conversation away.</h2>
+          <p>Whether you're scaling a team or scaling your career, AB Talent Sync makes the match.</p>
+          <div class="group">
+            <a class="btn btn--primary btn--lg" href="contact.html" data-magnetic>Talk to Us <span class="arrow">→</span></a>
+            <a class="btn btn--ghost btn--lg" href="services.html">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="18" stroke="url(#g2)" stroke-width="1.5"/>
+                <circle cx="13" cy="16" r="3" fill="#00d4ff"/><circle cx="27" cy="16" r="3" fill="#00ff88"/><circle cx="20" cy="27" r="3" fill="#e8e8f0"/>
+                <path d="M13 16L27 16M13 16L20 27M27 16L20 27" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+                <defs><linearGradient id="g2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#00ff88"/></linearGradient></defs>
+              </svg>
+            </span>
+            AB <b>Talent</b> Sync
+          </a>
+          <p>Connecting ambitious professionals with forward-thinking companies — faster, smarter, better.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="job-seekers.html">For Job Seekers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <a href="services.html">Permanent Staffing</a>
+          <a href="services.html">Contract Staffing</a>
+          <a href="services.html">Executive Search</a>
+          <a href="services.html">Candidate Support</a>
+        </div>
+        <div class="footer__col">
+          <h5>Get in touch</h5>
+          <a href="mailto:hello@abtalentsync.com">hello@abtalentsync.com</a>
+          <a href="tel:+914000000000">+91 40 0000 0000</a>
+          <a href="contact.html">Hyderabad, India</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> AB Talent Sync. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 002.5 6a2.5 2.5 0 005 0 2.5 2.5 0 00-2.52-2.5zM3 8.98h4v12H3zM10 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.32h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-4z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.6 22H2.5l7.5-8.6L2 2h6.6l4.5 6.7zM17.8 20h1.7L7.3 4H5.5z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

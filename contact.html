@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AB Talent Sync</title>
+  <meta name="description" content="Get in touch with AB Talent Sync. Whether you're hiring or job hunting, we're based in Hyderabad and ready to help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;350;400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%2300d4ff' stroke-width='2'/%3E%3Cpath d='M10 20l6-12 6 12' stroke='%2300ff88' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="AB Talent Sync home"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#g1)" stroke-width="1.5"/><circle cx="13" cy="16" r="3" fill="#00d4ff"/><circle cx="27" cy="16" r="3" fill="#00ff88"/><circle cx="20" cy="27" r="3" fill="#e8e8f0"/><path d="M13 16L27 16M13 16L20 27M27 16L20 27" stroke="#fff" stroke-opacity="0.35" stroke-width="1.2"/><defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#00ff88"/></linearGradient></defs></svg></span>AB <b>Talent</b> Sync</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a><a class="nav__link" href="about.html">About</a><a class="nav__link" href="services.html">Services</a><a class="nav__link" href="job-seekers.html">For Job Seekers</a><a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn--primary nav__cta" href="contact.html" data-magnetic>Hire Talent <span class="arrow">→</span></a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="nav__overlay" id="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="job-seekers.html">For Job Seekers</a><a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="contact.html">Hire Talent <span class="arrow">→</span></a>
+  </nav>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="padding-bottom:0;">
+      <div class="page-hero__grid-deco" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="crumb reveal">AB Talent Sync <b>/ Contact</b></p>
+        <h1 class="reveal" data-delay="1">Let's <span class="text-grad">sync.</span></h1>
+        <p class="lead reveal" data-delay="2">
+          Hiring, job hunting, or somewhere in between — tell us what you need and the
+          right person will get back to you within one business day.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="wrap contact-grid">
+        <!-- FORM (no <form> tag — JS handled) -->
+        <div class="form reveal">
+          <div id="contact-block">
+            <div class="field" data-field="name">
+              <label for="c-name">Full Name</label>
+              <input id="c-name" type="text" placeholder="Your name" autocomplete="name" />
+              <span class="err">Please enter your name.</span>
+            </div>
+            <div class="field--row">
+              <div class="field" data-field="email">
+                <label for="c-email">Email</label>
+                <input id="c-email" type="email" placeholder="you@email.com" autocomplete="email" />
+                <span class="err">Please enter a valid email.</span>
+              </div>
+              <div class="field" data-field="phone">
+                <label for="c-phone">Phone <span style="text-transform:none;color:var(--text-faint);">(optional)</span></label>
+                <input id="c-phone" type="tel" placeholder="+91 …" autocomplete="tel" />
+                <span class="err">Please enter a valid phone number.</span>
+              </div>
+            </div>
+            <div class="field" data-field="type">
+              <label for="c-type">I am a…</label>
+              <select id="c-type">
+                <option value="">Select inquiry type</option>
+                <option value="employer">Employer — I want to hire</option>
+                <option value="candidate">Candidate — I'm looking for a role</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="err">Please choose an option.</span>
+            </div>
+            <div class="field" data-field="message">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" placeholder="Tell us a little about what you need…"></textarea>
+              <span class="err">Please add a few more details (10+ characters).</span>
+            </div>
+            <button id="contact-submit" class="btn btn--primary btn--lg" type="button" data-magnetic style="width:100%;justify-content:center;">Send Message <span class="arrow">→</span></button>
+          </div>
+
+          <!-- success state -->
+          <div id="contact-success" class="form__success" role="status" aria-live="polite">
+            <div class="ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Message sent — thank you!</h3>
+            <p>We've received your details and will be in touch within one business day.</p>
+            <div style="margin-top:1.6rem;"><a class="btn btn--ghost" href="index.html">Back to Home</a></div>
+          </div>
+        </div>
+
+        <!-- ASIDE -->
+        <aside class="contact-aside reveal" data-delay="1">
+          <div class="contact-card">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></div>
+            <div><div class="k">Phone</div><div class="v"><a href="tel:+914000000000">+91 40 0000 0000</a></div></div>
+          </div>
+          <div class="contact-card">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg></div>
+            <div><div class="k">Email</div><div class="v"><a href="mailto:hello@abtalentsync.com">hello@abtalentsync.com</a></div></div>
+          </div>
+          <div class="contact-card">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div><div class="k">Office</div><div class="v">HITEC City, Hyderabad,<br>Telangana, India</div></div>
+          </div>
+          <div class="contact-card">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><div class="k">Hours</div><div class="v">Mon – Fri · 9:30am – 6:30pm IST</div></div>
+          </div>
+
+          <div class="map-card">
+            <div class="map-card__pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <b>Hyderabad, India</b>
+              <span style="font-size:0.85rem;color:var(--text-faint);">HITEC City · Telangana</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#g2)" stroke-width="1.5"/><circle cx="13" cy="16" r="3" fill="#00d4ff"/><circle cx="27" cy="16" r="3" fill="#00ff88"/><circle cx="20" cy="27" r="3" fill="#e8e8f0"/><path d="M13 16L27 16M13 16L20 27M27 16L20 27" stroke="#fff" stroke-opacity="0.35" stroke-width="1.2"/><defs><linearGradient id="g2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#00ff88"/></linearGradient></defs></svg></span>AB <b>Talent</b> Sync</a>
+          <p>Connecting ambitious professionals with forward-thinking companies — faster, smarter, better.</p>
+        </div>
+        <div class="footer__col"><h5>Company</h5><a href="about.html">About Us</a><a href="services.html">Services</a><a href="job-seekers.html">For Job Seekers</a><a href="contact.html">Contact</a></div>
+        <div class="footer__col"><h5>Services</h5><a href="services.html">Permanent Staffing</a><a href="services.html">Contract Staffing</a><a href="services.html">Executive Search</a><a href="services.html">Candidate Support</a></div>
+        <div class="footer__col"><h5>Get in touch</h5><a href="mailto:hello@abtalentsync.com">hello@abtalentsync.com</a><a href="tel:+914000000000">+91 40 0000 0000</a><a href="contact.html">Hyderabad, India</a></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> AB Talent Sync. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 002.5 6a2.5 2.5 0 005 0 2.5 2.5 0 00-2.52-2.5zM3 8.98h4v12H3zM10 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.32h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-4z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.6 22H2.5l7.5-8.6L2 2h6.6l4.5 6.7zM17.8 20h1.7L7.3 4H5.5z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
