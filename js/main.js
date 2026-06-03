@@ -173,7 +173,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(0, 212, 255, 0.6)';
+        ctx.fillStyle = 'rgba(79, 70, 229, 0.25)';
         ctx.fill();
 
         for (let b = a + 1; b < points.length; b++) {
@@ -184,7 +184,7 @@
             const o = (1 - d / linkDist) * 0.4;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y);
-            ctx.strokeStyle = `rgba(0, 212, 255, ${o})`;
+            ctx.strokeStyle = `rgba(79, 70, 229, ${o})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
@@ -380,7 +380,7 @@
         let toggle = 0;
         ctx2.arc = function (...args) {
           if (ctx2.fillStyle === 'rgba(0, 212, 255, 0.6)') {
-            ctx2.fillStyle = toggle++ % 3 === 0 ? 'rgba(0,255,136,0.55)' : 'rgba(0,212,255,0.60)';
+            ctx2.fillStyle = toggle++ % 3 === 0 ? 'rgba(150,85,235,0.20)' : 'rgba(79,70,229,0.25)';
           }
           return origDraw(...args);
         };
